@@ -1,8 +1,8 @@
-PWD /Users/wenj/Current application/wenj
+PWD /Users/wenj/申請資料/wenj
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/wenj/Current application/wenj/CV.tex
+INPUT /Users/wenj/申請資料/wenj/CV.tex
 OUTPUT CV.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
