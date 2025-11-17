@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} #2 & #3 \\
+    \textit{\small#4} & \textit{\small #5} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}  
+
+\newcommand{\intro}[1]{
+  \vspace{0pt}\item
+  \noindent\hfill\begin{minipage}{0.98\textwidth}
+    \centering\textit{#1}
+  \end{minipage}\hfill\null\vspace{-7pt}
+}
+
+\newcommand{\skillItem}[2]{\textbf{#1}{: #2}\\[0pt]}
+
+\newcommand{\educationSubheading}[5]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{@{}p{0.4\textwidth}@{\extracolsep{\fill}}p{0.15\textwidth}@{\extracolsep{\fill}}p{0.42\textwidth}@{}}
+    \textbf{#1} & \multicolumn{2}{r}{#2} \\
+    \textit{\small#3} & \textit{\small#4} & \textit{\small#5} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\certificateHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+\textbf{\Huge \scshape Wen-Chieh Chao, MD MS} 
+  \\ \vspace{1pt}
+  \small (+1) 669-237-8025 $|$ 
+  \href{mailto:wenj@stanford.edu}{\underline{\textcolor{blue}{wenj@stanford.edu}}} $|$
+  \href{https://www.linkedin.com/in/wenj-chao-05187b327/}{\underline{\textcolor{blue}{Linkedin}}}
+  \\ \vspace{3pt}
+  \small{Ultrasound-responsive biomaterials • 3D bioprinting • Engineered cardiac tissues}
+\end{center}
+  
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Graduate Researcher}{}{Oct 2024 -- Present}{The Skylar-Scott Lab, Stanford - Biomaterials, Liposomes}{Palo Alto, CA}
+\resumeItemListStart
+\resumeItem{Enabled controllable, ultrasound-triggered fibrin crosslinking by engineering a thrombin-loaded, ultrasound-responsive liposome release platform.}
+\resumeItem{Achieved robust and tunable thrombin release by optimizing membrane mechanics across $>$100 liposome fabrication conditions.}
+\resumeItem{Made evaluation of effects on lab-engineered growth factor possible by conducting iPSC culture experiments.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Assistant}{}{Dec 2023 - Jun 2024}{Wu Lab, IMB Academia Sinica - Neuroanalysis, Neuro-behavior}{Taipei, Taiwan}
+\resumeItemListStart
+\resumeItem{Characterized DBS-induced behavioral and neural changes in Parkinson’s mouse models by conducting controlled behavioral assays on $>$20 PD mice.}
+\resumeItem{Increased reproducibility and throughput of dendritic spine quantification by optimizing DeepD3-based analysis workflows.}
+\resumeItem{Extracted nonlinear structure in neural datasets by using PCA/UMAP-based dimensionality-reduction analyses.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Assistant}{}{Apr 2021 - Jun 2021}{Brain and Mind Lab, National Taiwan University - FMRI, VR design}{Taipei, Taiwan}
+\resumeItemListStart
+\resumeItem{Identified age-related differences in brain activation by performing full FMRI preprocessing and 2nd-level SPM analysis in MATLAB.}
+\resumeItem{Enabled controlled testing of spatial navigation behavior by building non-Euclidean virtual environments in Unity.}
+\resumeItem{Reduced experimental analysis time by ~80\% by integrating open-source gaze-analytics pipelines into the workflow.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Rotation Internship}{}{Oct 2022 - Nov 2022}{The Tytgat Institute, Amsterdam UMC - GPCR, Transfection}{Amsterdam, Netherlands}
+\resumeItemListStart
+\resumeItem{Screened bile-salt–responsive GPCR candidates by applying the Presto-Tango reporter platform in HTLA cells.}
+\resumeItem{Boosted transfection success rate from ~50\% to ~90\% by optimizing reagent stoichiometry and workflow conditions.}
+\resumeItem{Supported project planning by synthesizing bile-salt signaling literature \& presenting updates to research team.}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------Publications-----------
+
+\section{Publications \& Presentations}
+Manuscript in preparation.
+
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]   
+  \small{\item{
+    \skillItem{Wet Lab \& Biomaterials}{Liposome fabrication, protein encapsulation, iPSC culture, hydrogel/fibrin crosslinking}
+    \skillItem{Computational \& Modeling}{MATLAB, Python, FMRI/SPM, neural signal analysis, PCA/UMAP}
+    \skillItem{Instrumentation \& Imaging}{Ultrasound transducers, confocal/fluorescence microscopy, FIJI, DeepD3}
+  }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Stanford University}{}{2024 - 2026}{Masters of Science - Biomedical Engineering}{Palo Alto, CA}
+\resumeItemListStart
+\resumeItem{Research focus: ultrasound-responsive biomaterials and 3D bioprinting.}
+\resumeItem{GPA: 3.91}
+\resumeItemListEnd
+
+\resumeSubheading
+{National Taiwan University}{}{2017 -- 2023}{Doctor of Medicine - MD, Medicine}{Taipei, Taiwan}
+\resumeItemListStart
+\resumeItem{Clinically trained with full two-year hospital rotations.}
+\resumeItem{GPA: 3.98}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
